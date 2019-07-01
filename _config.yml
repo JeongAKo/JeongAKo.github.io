@@ -4,9 +4,9 @@ gems:
   - jekyll-paginate
 
 # Site settings
-title: "Mediator"
+title: "Jeonga 개발 블로그"
 description: > # this means to ignore newlines until "email:"
-   A Jekyll theme - Medium inspired
+   SWIFT 를 배우면서 정리하는 블로그 입니다.
 
 email: a-mail@mail.mail
 #blog logo
@@ -16,8 +16,8 @@ float_logo: true # true, false (default)
 # blog cover
 cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
 
-name: 'Dirk Fabisch'
-author: 'Dirk Fabisch'
+name: '고정아'
+author: '고정아'
 author_image: "/assets/images/author.jpg"
 
 paginate:	5
