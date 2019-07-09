@@ -4,7 +4,7 @@ gems:
   - jekyll-paginate
 
 # Site settings
-title: "Jeonga 개발 블로그"
+title: "Daisy 개발 블로그"
 description: > # this means to ignore newlines until "email:"
    SWIFT 를 배우면서 정리하는 블로그 입니다.
 
@@ -16,8 +16,8 @@ float_logo: true # true, false (default)
 # blog cover
 cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
 
-name: '고정아'
-author: '고정아'
+name: 'Daisy'
+author: 'Daisy'
 author_image: "/assets/images/author.jpg"
 
 paginate:	5
