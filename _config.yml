@@ -4,7 +4,7 @@ gems:
   - jekyll-paginate
 
 # Site settings
-title: "Daisy 개발 블로그"
+title: "Daisy 블로그"
 description: > # this means to ignore newlines until "email:"
    SWIFT 를 배우면서 정리하는 블로그 입니다.
 
@@ -22,7 +22,7 @@ author_image: "/assets/images/author.jpg"
 
 paginate:	5
 
-url: "https://github.com/JeongAKo" # the base hostname & protocol for your site
+url: "https://jeongako.github.io" # the base hostname & protocol for your site
 baseurl: ""
 #used to display twitter cards
 twitter_handle: '@dirkfabisch'
