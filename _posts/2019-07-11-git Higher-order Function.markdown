@@ -2,7 +2,7 @@
 layout: post
 title:  "Higher-order Function(고차함수)"
 date:   2019-10-02 21:15:32
-categories: git
+categories: swift
 ---
 #### 고차함수란?
 
