@@ -1,14 +1,10 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Commit Message"
 date:   2019-10-02 21:15:32
 categories: git
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-## 골치아픈 이름 짓기
+#### 골치아픈 이름 짓기
 
 프로그래머들에게 가장 어려운 것 하나만 꼽아보라고 하면 절반이 `naming`을 선택한다고 합니니다. 프로그램을 작성하면서 파일명, 클래스명, 변수명, 함수명 등 수도 없이 많은 이름들을 지어내야 합니다. 거의 작명소 수준입니다. 그런 이름 짓기보다 더 어려운 것이 있습니다. 바로 `커밋 메시지` 작성입니다.
 
@@ -18,7 +14,7 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 
 
-## 커밋 메시지 규칙
+### 커밋 메시지 규칙
 
 이미 유정하지만, 커밋 메시지를 작성하는 좋은 규칙들을 공유합니다.
 
@@ -45,11 +41,12 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 
 
-## 좋은 커밋 메시지를 위한 영어 단어 목록
+### 좋은 커밋 메시지를 위한 영어 단어 목록
 
 node.js와 React 프로젝트의 Change History를 참고로 자주 반복되는 로그 메시지의 패턴을 정리해 봤습니다. 특별한 목적의 커밋이 아닌 이상 대부분의 메시지는 아래의 경우들에 포함 됩니다. 문장을 명료하게 만들어주는 문법들도 적어 보았습니다.
 
-### FIX
+- #### FIX
+
 
 가장 자주 사용되는 커밋 로그 중 하나로 ‘Fix’가 있습니다. 보통 올바르지 않은 동작을 고친 경우에 사용합니다.
 
@@ -57,7 +54,7 @@ node.js와 React 프로젝트의 Change History를 참고로 자주 반복되는
 
 > A를 수정합니다
 
-```swift
+```
 Fix stat cache
 Fix changelog entry
 Fix broken jsiexecutor search path.
@@ -69,7 +66,7 @@ Fix broken jsiexecutor search path.
 
 가장 자주 사용되는 패턴입니다.
 
-```swift
+```
 Fix calculation in process.uptime()
 Fix build warning in node_report.cc
 Fix error condition in Verify::VerifyFinal
@@ -83,7 +80,7 @@ Fix duplicate symbols linker error in xcodeproj
 
 ‘Fix A’로 끝낼 수 있지만, 보다 많은 정보를 주기 위해 which나 that 관계 대명사로 A를 설명합니다. 무엇을 수정한 것인지 보다 상세하게 설명할줄 때 주로 사용됩니다.
 
-```swift
+```
 Fix incorrect type which makes animated gifs not loop forever on device
 Fix crash that happens when a component throws an exception that contains a null message
 ```
@@ -94,7 +91,7 @@ Fix crash that happens when a component throws an exception that contains a null
 
 왜 수정하는지를 추가로 설명합니다.
 
-```swift
+```
 Fix inability to remove 'Disabled' state from AccessibilityStates
 Fix HTTP connection timeout callback to be appropriately called
 ```
@@ -105,7 +102,7 @@ Fix HTTP connection timeout callback to be appropriately called
 
 ‘Fix A to B’와 의미는 비슷하나, 어감이 살짝 다릅니다. 고쳐진 B의 상태가 보다 강조됩니다.
 
-```swift
+```
 Fix react-native init --help so that it doesn't return undefined
 Fix Android 28's inverted ScrollView so that momentum is in the proper direction
 ```
@@ -116,7 +113,7 @@ Fix Android 28's inverted ScrollView so that momentum is in the proper direction
 
 여기서 A는 보통 ‘issue’, ‘error’, ‘crash’등이 들어갑니다. B는 문제가 발생한 모습을 적어주면 됩니다.
 
-```swift
+```
 Fix case where content of inline views didn't get relaid out
 Fix case where inline view is visible even though it should have been truncated
 Fix issue where Image.resizeMode isn't respected while source is loading, resulting in unexpected padding
@@ -128,12 +125,14 @@ Fix issue where Image.resizeMode isn't respected while source is loading, result
 
 여기서 A는 보통 ‘issue’, ‘error’, ‘crash’등이 들어갑니다. B는 문제가 발생하는 상황을 적어주면 됩니다.
 
-```swift
+```
 Fix accidental showing of Modal when visible prop is undefined or null
 Fix crash when removing root nodes
 ```
 
-### ADD
+
+
+- #### ADD
 
 코드나 테스트, 예제, 문서 등의 추가가 있을 때 사용합니다
 
@@ -151,7 +150,7 @@ Add ERR_INSPECTOR_COMMAND error
 
 > B를 위해 A를 추가했습니다
 
-```swift
+```
 Add documentation for the defaultPort option
 Add example for setting Vary: Accept-Encoding header in zlib.md
 Add missing includes for vtune build
@@ -164,13 +163,15 @@ Add devDependencies support for templates
 
 > B에 A를 추가했습니다
 
-```swift
+```
 Add error description to Image onError callback
 Add displayName to ActivityIndicator
 Add deprecation notice to SwipeableListView
 ```
 
-### REMOVE
+
+
+- #### REMOVE
 
 코드의 삭제가 있을 때 사용합니다. ‘Clean’이나 ‘Eliminate’를 사용하기도 합니다. 보통 A 앞에 ‘unnecessary’, ‘useless’, ‘unneeded’, ‘unused’, ‘duplicated’가 붙는 경우가 많습니다.
 
@@ -178,7 +179,7 @@ Add deprecation notice to SwipeableListView
 
 > A를 삭제합니다
 
-```swift
+```
 Remove fallback cache
 Remove unnecessary italics from child_process.md
 Remove useless additionnal blur call
@@ -191,12 +192,14 @@ Remove duplicated buffer negative allocation test
 
 > B에서 A를 삭제합니다
 
-```swift
+```
 Remove absolute path parameter from transformers
 Remove trailing slash from origin header if no port is specified
 ```
 
-### USE
+
+
+- #### USE
 
 특별히 무언가를 사용해 구현을 하는 경우입니다.
 
@@ -206,7 +209,7 @@ Remove trailing slash from origin header if no port is specified
 
 ‘사용하였음’을 이야기 할 때는 대체적으로 목적이 필요하기 때문에 이 용법은 자주 사용되지 않습니다.
 
-```swift
+```
 Remove absolute path parameter from transformers
 Remove trailing slash from origin header if no port is specified
 ```
@@ -216,7 +219,10 @@ Remove trailing slash from origin header if no port is specified
 > B에 A를 사용합니다
 
 ```
-
+Use fake MessageEvent for port.onmessage
+Use object writer for thrown errors
+Use ru_stime for system CPU calculation
+Use relative path for SCRIPTDIR
 ```
 
 #### Use A to B
@@ -224,7 +230,9 @@ Remove trailing slash from origin header if no port is specified
 > B가 되도록 A를 사용합니다
 
 ```
-
+use common operations to define browser globals
+use triggerReport() to handle signals
+use PauseOnNextJavascriptStatement to implement --inspect-brk-node
 ```
 
 #### Use A in B
@@ -232,7 +240,11 @@ Remove trailing slash from origin header if no port is specified
 > B에서 A를 사용합니다
 
 ```
-
+Use smart pointer in UDPWrap::OnSend
+Use same parameter name in node_report.cc
+Use TextLegend example in Android as well
+Use main.jsbundle in iOS template for production build
+Use new Metro configuration in react-native cli
 ```
 
 #### Use A instead of B
@@ -240,20 +252,29 @@ Remove trailing slash from origin header if no port is specified
 > B 대신 A를 사용합니다
 
 ```
-
+Use babel runtime instead of relying on global babelHelpers and regenerator
 ```
 
-### REFACTOR
+
+
+- #### REFACTOR
 
 전면 수정이 있을 때 사용합니다.
 
 #### Refactor A
 
 ```
-
+Refactor tick objects prune function
+Refactor thread life cycle management
+Refactor QueryWrap lifetime management 
+Refactor argument validation
+Refactor thread life cycle management
+Refactor MockNativeMethods in Jest
 ```
 
-### SIMPLIFY
+
+
+- #### SIMPLIFY
 
 복잡한 코드를 단순화 할 때 사용합니다. Refactor의 성격이 강하나 이보다는 약한 수정의 경우 이용하면 좋습니다.
 
@@ -262,10 +283,17 @@ Remove trailing slash from origin header if no port is specified
 > A를 단순화합니다
 
 ```
-
+Simplify code and remove obsolete checks
+Simplify the setup of async hooks trace events
+Simplify heap space iteration
+Simplify TriggerNodeReport()
+Simplify AliasedBuffer lifetime management 
+Simplify loop arithmetic in GetCPUInfo
 ```
 
-### UPDATE
+
+
+- #### UPDATE
 
 개정이나 버전 업데이트가 있을 때 사용합니다. Fix와는 달리 Update는 잘못된 것을 바로잡는 것이 아니라는 점에 주의해야 합니다. 원래도 정상적으로 동작하고 있었지만, 수정, 추가, 보완을 한다는 개념입니다. 코드보다는 주로 문서나 리소스, 라이브러리등에 사용합니다.
 
@@ -274,16 +302,22 @@ Remove trailing slash from origin header if no port is specified
 > A를 B로 업데이트 합니다.
 
 ```
-
+Update acorn to 6.1.0
 ```
 
 > A를 B하기 위해 업데이트 합니다
 
 ```
-
+Update react-devtools-core and plist to include security fixes reported by npm audit
+Update RCTLinkingManager.h to explicitly state the 'nullability' of parameters
+Update repo docs to use HTTPS
+Update app icons to match recent Android releases
+Update babelHelpers with Babel 7 support
 ```
 
-### IMPROVE
+
+
+- #### IMPROVE
 
 향상이 있을 때 사용합니다. 호환성, 테스트 커버리지, 성능, 검증 기능, 접근성 등 다양한 것들이 목적이 될 수 있습니다.
 
@@ -292,10 +326,20 @@ Remove trailing slash from origin header if no port is specified
 > A를 향상시킵니다
 
 ```
-
+Improve compatibility with http/1
+Improve Unicode handling
+Improve test coverage in perf_hooks
+Improve validation of report output
+Improve performance of test-crypto-timing-safe-equal-benchmarks
+Improve color detection
+Improve Android Network Security config
+Improve Accessibility
+Improve iOS's accessibilityLabel performance by up to 20%
 ```
 
-### MAKE
+
+
+- #### MAKE
 
 주로 기존 동작의 변경을 명시합니다.
 
@@ -312,10 +356,16 @@ Remove trailing slash from origin header if no port is specified
 모두 기존의 동작을 바꾼 것들입니다. 새롭게 뭔가를 만들었을 때는 Make 대신, Add를 사용해야 합니다.
 
 ```
-
+Make config object read-only
+make 'floating patch' message informational
+Make values optional in ViewPropTypes
+make read() be called indefinitely if the user wants so
+make IsolateData store ArrayBufferAllocator
 ```
 
-### IMPLEMENT
+
+
+- #### IMPLEMENT
 
 코드가 추가된 정도보다 더 주목할 만한 구현체를 완성시켰을 때 사용합니다.
 
@@ -326,7 +376,9 @@ Remove trailing slash from origin header if no port is specified
 ‘Add’에 비해 더 큰 단위의 코드 추가에 사용되며, 특히 모듈이나 클래스 등의 단위에 사용되기 때문에 특별히 목적을 부여 해주지 않아도 되는 경우가 많습니다. 따라서 ‘Add’에 비해 to나 for가 함께 사용되는 경우가 적습니다.
 
 ```
-
+Implement date object
+Implement Image.defaultSource
+Implement bundle sync status
 ```
 
 #### Implement A to B
@@ -336,10 +388,13 @@ Remove trailing slash from origin header if no port is specified
 구현 목적을 설명할 필요가 있을 때에는 ‘to’를 사용합니다.
 
 ```
-
+Implement requiresMainQueueSetup in RCTTVNavigationEventEmitter to satisfy Xcode warning
+Implement an in-memory cache store to save parsed and validated documents and provide performance benefits for repeat executions of the same document
 ```
 
-### REVISE
+
+
+- #### REVISE
 
 Update와 비슷하나 문서의 개정이 있을 때 주로 사용합니다.
 
@@ -348,10 +403,12 @@ Update와 비슷하나 문서의 개정이 있을 때 주로 사용합니다.
 > A 문서를 개정합니다
 
 ```
-
+Revise deprecation semverness info in Collaborator Guide
 ```
 
-### CORRECT
+
+
+- #### CORRECT
 
 주로 문법의 오류나 타입의 변경, 이름 변경 등에 사용합니다.
 
@@ -360,10 +417,16 @@ Update와 비슷하나 문서의 개정이 있을 때 주로 사용합니다.
 > A를 고칩니다
 
 ```
-
+Correct grammatical error in BUILDING.md
+Correct parameters, return types in crypto.md
+Correct styling of _GitHub_ in onboarding doc
+Correct buffer changelog ordering
+Correct async_hooks resource names
 ```
 
-### ENSURE
+
+
+- #### ENSURE
 
 무엇이 확실하게 보장받는다는 것을 명시합니다. if 구문처럼 조건을 확실하게 주었을 때에도 사용 될 수 있습니다. ‘Make sure’도 같은 용도로 사용될 수 있습니다.
 
@@ -372,10 +435,16 @@ Update와 비슷하나 문서의 개정이 있을 때 주로 사용합니다.
 > A가 확실히 보장 되도록 수정했습니다
 
 ```
-
+Ensure quiet always takes precedence
+Ensure cookies with illegal characters are not sent to okhttp
+Ensure require.main for CJS top-level loads
+Ensure Stream.pipeline re-throws errors without callback
+Ensure options.flag defaults to 'r' in readFile
 ```
 
-### PREVENT
+
+
+- #### PREVENT
 
 특정한 처리를 못하게 막습니다
 
@@ -384,7 +453,11 @@ Update와 비슷하나 문서의 개정이 있을 때 주로 사용합니다.
 > A하지 못하게 막습니다
 
 ```
-
+Prevent multiple connection errors
+Prevent constructing console methods
+Prevent event loop blocking
+Prevent a potential error in event handling if Object.prototype is extended.
+Prevent an infinite loop when attempting to render portals with SSR.
 ```
 
 #### Prevent A from B
@@ -392,10 +465,12 @@ Update와 비슷하나 문서의 개정이 있을 때 주로 사용합니다.
 > A를 B하지 못하게 막습니다
 
 ```
-
+Prevent event handlers from receiving extra argument in development.
 ```
 
-### AVOID
+
+
+- #### AVOID
 
 ‘Prevent’는 못하게 막지만, ‘Avoid’는 회피합니다. if 구문으로 특정한 동작을 제외시키는 경우에도 사용 할 수 있습니다.
 
@@ -404,7 +479,11 @@ Update와 비슷하나 문서의 개정이 있을 때 주로 사용합니다.
 > A를 회피합니다
 
 ```
-
+Avoid flusing uninitialized traces
+Avoid overrun on UCS-2 string write
+Avoid race condition in OnHeaderCallback
+Avoid memory leak on gc observer
+Avoid materializing ArrayBuffer for creation
 ```
 
 #### Avoid A if B, Avoid A when B
@@ -412,10 +491,15 @@ Update와 비슷하나 문서의 개정이 있을 때 주로 사용합니다.
 > B인 상황에서 A를 회피합니다
 
 ```
-
+Avoid importing entire crypto dependency tree if not in Node.js.
+Avoid "Member not found" exception in IE10 when calling preventDefault() in Synthetic Events.
+Avoid input validation warning from browsers when changing type.  
+Avoid double reload event when reloading JS
 ```
 
-### MOVE
+
+
+- #### MOVE
 
 코드의 이동이 있을 때 사용합니다.
 
@@ -424,10 +508,15 @@ Update와 비슷하나 문서의 개정이 있을 때 주로 사용합니다.
 > A를 B로 옮깁니다
 
 ```
-
+Move test-process-uptime to parallel
+Move function from header to source file
+Move async hooks trace events setup to pre_execution.js
+move initialization of node-report into pre_execution.js
 ```
 
-### RENAME
+
+
+- #### RENAME
 
 이름 변경이 있을 때 사용합니다.
 
@@ -436,10 +525,14 @@ Update와 비슷하나 문서의 개정이 있을 때 주로 사용합니다.
 > A를 B로 이름 변경합니다
 
 ```
-
+Rename node-report to report
+Rename location to trigger
+Rename node-report suite to report
 ```
 
-### ALLOW
+
+
+- #### ALLOW
 
 Make와 비슷하지만, 허용을 표현할 때 사용합니다.
 
@@ -448,10 +541,15 @@ Make와 비슷하지만, 허용을 표현할 때 사용합니다.
 > A가 B를 할 수 있도록 허용합니다
 
 ```
-
+Allow the output filename to be a {Function}
+Allow Node.js-like runtimes to identify as Node.js as well.
+Allow passing parseOptions to ApolloServerBase constructor.
+Allow an optional function to resolve the rootValue, passing the DocumentNode AST to determine the value.
 ```
 
-### VERIFY
+
+
+- #### VERIFY
 
 검증 코드를 넣을 때 주로 사용합니다.
 
@@ -460,10 +558,12 @@ Make와 비슷하지만, 허용을 표현할 때 사용합니다.
 > A를 검증합니다
 
 ```
-
+Verify heap buffer allocations occur
 ```
 
-### SET
+
+
+- #### SET
 
 변수 값을 변경하는 등의 작은 수정에 주로 사용합니다.
 
@@ -472,10 +572,12 @@ Make와 비슷하지만, 허용을 표현할 때 사용합니다.
 > A를 B로 설정합니다
 
 ```
-
+set tls.DEFAULT_ECDH_CURVE to 'auto'
 ```
 
-### PASS
+
+
+- #### PASS
 
 파라메터를 넘기는 처리에 주로 사용합니다.
 
@@ -484,6 +586,6 @@ Make와 비슷하지만, 허용을 표현할 때 사용합니다.
 > A를 B로 넘깁니다
 
 ```
-
+Pass the response toolkit to the context function.
 ```
 

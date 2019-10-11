@@ -5,9 +5,7 @@ date:   2019-10-10 15:33:00
 categories: swift
 ---
 
-
-
-## Access Controll (접근 제한자)
+### Access Controll (접근 제한자)
 
 접근제어는 객체지향 패러다임에서 중요한 개념 중 하나인 은닉화를 구현하기 위한 아주 중요한 기능입니다.
 
