@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Snippet"
-date:   2019-10-05 22:57:15
+date:   2019-10-12 22:57:15
 categories: swift
 ---
 
@@ -19,7 +19,7 @@ Xcode11로 넘어오면서 미니맵기능이 추가됨에 따라 MARK의 중요
 
 **UIViewController**
 
-```swift
+```
 // MARK: - Properties
 // MARK: - IBOutlets
 // MARK: - Life cycle
@@ -36,7 +36,7 @@ Xcode11로 넘어오면서 미니맵기능이 추가됨에 따라 MARK의 중요
 
 **model**
 
-```swift 
+``` 
 // MARK: - Attributes
   
 // MARK: - Initializers
