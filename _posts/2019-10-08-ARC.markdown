@@ -1,7 +1,0 @@
----
-layout: post
-title:  "ARC"
-date:   2019-10-08 23:30:00
-categories: swift
----
-
