@@ -45,7 +45,9 @@ categories: git
 
 node.js와 React 프로젝트의 Change History를 참고로 자주 반복되는 로그 메시지의 패턴을 정리해 봤습니다. 특별한 목적의 커밋이 아닌 이상 대부분의 메시지는 아래의 경우들에 포함 됩니다. 문장을 명료하게 만들어주는 문법들도 적어 보았습니다.
 
-- #### FIX
+
+
+- ### FIX
 
 
 가장 자주 사용되는 커밋 로그 중 하나로 ‘Fix’가 있습니다. 보통 올바르지 않은 동작을 고친 경우에 사용합니다.
@@ -132,7 +134,9 @@ Fix crash when removing root nodes
 
 
 
-- #### ADD
+
+
+- ### ADD
 
 코드나 테스트, 예제, 문서 등의 추가가 있을 때 사용합니다
 
@@ -171,7 +175,9 @@ Add deprecation notice to SwipeableListView
 
 
 
-- #### REMOVE
+
+
+- ### REMOVE
 
 코드의 삭제가 있을 때 사용합니다. ‘Clean’이나 ‘Eliminate’를 사용하기도 합니다. 보통 A 앞에 ‘unnecessary’, ‘useless’, ‘unneeded’, ‘unused’, ‘duplicated’가 붙는 경우가 많습니다.
 
@@ -199,7 +205,9 @@ Remove trailing slash from origin header if no port is specified
 
 
 
-- #### USE
+
+
+- ### USE
 
 특별히 무언가를 사용해 구현을 하는 경우입니다.
 
@@ -257,7 +265,9 @@ Use babel runtime instead of relying on global babelHelpers and regenerator
 
 
 
-- #### REFACTOR
+
+
+- ### REFACTOR
 
 전면 수정이 있을 때 사용합니다.
 
@@ -274,7 +284,9 @@ Refactor MockNativeMethods in Jest
 
 
 
-- #### SIMPLIFY
+
+
+- ### SIMPLIFY
 
 복잡한 코드를 단순화 할 때 사용합니다. Refactor의 성격이 강하나 이보다는 약한 수정의 경우 이용하면 좋습니다.
 
@@ -293,7 +305,9 @@ Simplify loop arithmetic in GetCPUInfo
 
 
 
-- #### UPDATE
+
+
+- ### UPDATE
 
 개정이나 버전 업데이트가 있을 때 사용합니다. Fix와는 달리 Update는 잘못된 것을 바로잡는 것이 아니라는 점에 주의해야 합니다. 원래도 정상적으로 동작하고 있었지만, 수정, 추가, 보완을 한다는 개념입니다. 코드보다는 주로 문서나 리소스, 라이브러리등에 사용합니다.
 
@@ -317,7 +331,9 @@ Update babelHelpers with Babel 7 support
 
 
 
-- #### IMPROVE
+
+
+- ### IMPROVE
 
 향상이 있을 때 사용합니다. 호환성, 테스트 커버리지, 성능, 검증 기능, 접근성 등 다양한 것들이 목적이 될 수 있습니다.
 
@@ -339,7 +355,9 @@ Improve iOS's accessibilityLabel performance by up to 20%
 
 
 
-- #### MAKE
+
+
+- ### MAKE
 
 주로 기존 동작의 변경을 명시합니다.
 
@@ -365,7 +383,9 @@ make IsolateData store ArrayBufferAllocator
 
 
 
-- #### IMPLEMENT
+
+
+- ### IMPLEMENT
 
 코드가 추가된 정도보다 더 주목할 만한 구현체를 완성시켰을 때 사용합니다.
 
@@ -394,7 +414,9 @@ Implement an in-memory cache store to save parsed and validated documents and pr
 
 
 
-- #### REVISE
+
+
+- ### REVISE
 
 Update와 비슷하나 문서의 개정이 있을 때 주로 사용합니다.
 
@@ -408,7 +430,9 @@ Revise deprecation semverness info in Collaborator Guide
 
 
 
-- #### CORRECT
+
+
+- ### CORRECT
 
 주로 문법의 오류나 타입의 변경, 이름 변경 등에 사용합니다.
 
@@ -426,7 +450,9 @@ Correct async_hooks resource names
 
 
 
-- #### ENSURE
+
+
+- ### ENSURE
 
 무엇이 확실하게 보장받는다는 것을 명시합니다. if 구문처럼 조건을 확실하게 주었을 때에도 사용 될 수 있습니다. ‘Make sure’도 같은 용도로 사용될 수 있습니다.
 
@@ -444,7 +470,9 @@ Ensure options.flag defaults to 'r' in readFile
 
 
 
-- #### PREVENT
+
+
+- ### PREVENT
 
 특정한 처리를 못하게 막습니다
 
@@ -470,7 +498,9 @@ Prevent event handlers from receiving extra argument in development.
 
 
 
-- #### AVOID
+
+
+- ### AVOID
 
 ‘Prevent’는 못하게 막지만, ‘Avoid’는 회피합니다. if 구문으로 특정한 동작을 제외시키는 경우에도 사용 할 수 있습니다.
 
@@ -499,7 +529,9 @@ Avoid double reload event when reloading JS
 
 
 
-- #### MOVE
+
+
+- ### MOVE
 
 코드의 이동이 있을 때 사용합니다.
 
@@ -516,7 +548,9 @@ move initialization of node-report into pre_execution.js
 
 
 
-- #### RENAME
+
+
+- ### RENAME
 
 이름 변경이 있을 때 사용합니다.
 
@@ -532,7 +566,9 @@ Rename node-report suite to report
 
 
 
-- #### ALLOW
+
+
+- ### ALLOW
 
 Make와 비슷하지만, 허용을 표현할 때 사용합니다.
 
@@ -549,7 +585,9 @@ Allow an optional function to resolve the rootValue, passing the DocumentNode AS
 
 
 
-- #### VERIFY
+
+
+- ### VERIFY
 
 검증 코드를 넣을 때 주로 사용합니다.
 
@@ -563,7 +601,9 @@ Verify heap buffer allocations occur
 
 
 
-- #### SET
+
+
+- ### SET
 
 변수 값을 변경하는 등의 작은 수정에 주로 사용합니다.
 
@@ -577,7 +617,9 @@ set tls.DEFAULT_ECDH_CURVE to 'auto'
 
 
 
-- #### PASS
+
+
+- ### PASS
 
 파라메터를 넘기는 처리에 주로 사용합니다.
 
