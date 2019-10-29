@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "터미널 명령어"
+date:   2019-04-29 22:48:26
+categories: Mac
+---
+
