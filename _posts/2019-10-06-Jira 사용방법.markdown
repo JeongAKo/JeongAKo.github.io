@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Jira 사용방법"
+date:   2019-09-06 22:48:26
+categories: Collabarate
+---
+
