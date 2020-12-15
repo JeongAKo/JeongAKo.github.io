@@ -2,7 +2,7 @@
 layout: post
 title:  "Snippet"
 date:   2019-10-12 22:57:15
-categories: swift
+categories: Xcode
 ---
 
 ### Snippet
