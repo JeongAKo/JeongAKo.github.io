@@ -6,6 +6,10 @@ categories: Xcode
 ---
 
 
+
+
+
+
 <img width="736" alt="스크린샷 2020-07-10 오후 1 18 00" src="https://user-images.githubusercontent.com/47776915/87116020-ca75bb00-c2af-11ea-8896-454dfcc2dea9.png">
 
 1. 확장 프로그램에서 check!
